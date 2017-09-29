@@ -1,13 +1,13 @@
 {
-  "name": "mantisheribertoarg",
+  "name": "CollabPortal",
   "description": "",
   "defaultLayout": "phone-portrait",
   "previewToken": "94153761",
   "uiCommonVersion": "5.1.2",
   "creatorId": "gdlherro",
-  "id": "mantisheribertoarg",
-  "previewImageURL": "/previews/94153761-mantisheribertoarg/app/login.png",
+  "id": "collabportal_8",
+  "previewImageURL": "/previews/94153761-collabportal_8/.png",
   "isVersioned": true,
-  "githubRepo": "https://github.com/heribertoarg/mantisHeribertoARG",
+  "githubRepo": "https://github.com/heribertoarg/CollabPortal",
   "creatorName": "Heriberto Adolfo Rodriguez Guzman"
 }
