@@ -19,8 +19,6 @@ function app_searchcriteria($scope, $rootScope, app) {
 
         var a = dynPageConfig;
         
-        debugger;
-
         $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
         
         $scope.searchArray = {};
