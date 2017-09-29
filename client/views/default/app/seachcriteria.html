@@ -1,4 +1,47 @@
 <ion-view data-comp-id="ionic-view.1">
-    <ion-content data-comp-id="ionic-content.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Search</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.2"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class=" calm-bg" data-comp-id="ionic-content.1">
+        <!--Form Contents-->
+        <div ng-repeat="control in controls">
+            <div ng-if="control.ControlType == 'TextBox'">
+                <div data-comp-id="div.1" style="margin: 10% 10% 2%;">
+                    <label class="item item-input item-stacked-label light-bg"
+                        data-comp-id="textInput.1">
+                        <span class="input-label dark" style="color: rgb(136, 136, 136);">{{control.ControlCaption}}</span>
+                        <input ng-model="searchArray[control.ControlName]" type="text">
+                    </label>
+                </div>
+            </div>
+            <div ng-if="control.ControlType == 'Combobox'">
+                <div data-comp-id="div.2" style="margin: 10% 10% 2%;">
+                    <label
+                        class="item item-input item-stacked-label item-select-icon positive-icon light-bg"
+                        data-comp-id="selectInput.1">
+                        <span class="input-label">Select Label</span>
+                        <select ng-model="searchArray[control.ControlName]">
+                            <option ng-repeat="datasource in datasources[control.LookupService.name]"
+                                value="{{datasource[control.LookupService.ValueColumn]}}">{{datasource[control.LookupService.DisplayColumn]}}</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-comp-id="div.3" style="width: 80%; margin: 10%;">
+            <div class="row" data-comp-id="row.1" style="margin: 0px;">
+                <div class="col" data-comp-id="column.1">
+                    <button class="button button-block button-positive" data-comp-id="button.3"
+                        ng-click="search()" style="border-color: rgba(255, 255, 255, 0);">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!--Form Contents-->
     </ion-content>
 </ion-view>
