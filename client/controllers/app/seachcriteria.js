@@ -3,6 +3,24 @@ function app_searchcriteria($scope, $rootScope, app, $http) {
     'use strict';
     app.init($scope);
 
+    $rootScope.dynPageName = "OrderView";
+
+    var configurationDynPageUrl = "https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + $rootScope.dynPageName;
+
+    $http({
+        method: 'GET',
+        url: configurationDynPageUrl
+    }).then(function successCallback(response) {
+        var a = response;
+        // this callback will be called asynchronously
+        // when the response is available
+    }, function errorCallback(response) {
+        var a = response;
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+    });
+
+
     $rootScope.dynPage = {
     	"OrderPortalCfg": {
     		"TITLE": "Order View",
