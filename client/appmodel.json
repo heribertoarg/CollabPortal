@@ -43,41 +43,6 @@
       }
     }
   },
-  "test": {
-    "type": "object",
-    "comment": "",
-    "properties": {
-      "IssuesList": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "severity": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "summary": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            }
-          }
-        },
-        "update": {
-          "type": "none"
-        }
-      }
-    }
-  },
   "createreport": {
     "type": "object",
     "comment": "",
