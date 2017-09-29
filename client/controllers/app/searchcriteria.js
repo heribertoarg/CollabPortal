@@ -41,21 +41,6 @@ function app_searchcriteria($scope, $rootScope, app) {
     							"ControlCaption": "Ship-To Customer"
     						},
     						{
-    							"ControlName": "ordtyp",
-    							"ControlType": "Combobox",
-    							"ControlCaption": "Order Type",
-    							"LookupService": {
-    								"DisplayColumn": "lngdsc",
-    								"ValueColumn": "colval",
-    								"name": "DescriptionsDatasource"
-    							}
-    						},
-    						{
-    							"ControlName": "btcust",
-    							"ControlType": "TextBox",
-    							"ControlCaption": "Bill-To-Customer"
-    						},
-    						{
     							"ControlName": "rtcust",
     							"ControlType": "TextBox",
     							"ControlCaption": "Route-To-Customer"
