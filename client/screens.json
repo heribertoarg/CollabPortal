@@ -20,6 +20,12 @@
       "name": "SeachCriteria",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "searchresults",
+      "name": "SearchResults",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",

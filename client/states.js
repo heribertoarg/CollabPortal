@@ -33,5 +33,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.searchresults', {
+        views: {
+            app: {
+                controller: 'app_searchresults',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.searchresults');
+                }
+            }
+        }
     });
 });
