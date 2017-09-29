@@ -4,7 +4,7 @@ function app_searchcriteria($scope, $rootScope, app) {
     app.init($scope);
     
     $rootScope.dynPageName = "OrderView";
-    $scope.getDynPageConfiguration();
+    var a = getDynPageConfiguration();
     $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
     
     $scope.datasources = {   
