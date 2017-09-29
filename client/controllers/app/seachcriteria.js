@@ -5,7 +5,7 @@ function app_searchcriteria($scope, $rootScope, app, $http) {
 
     $rootScope.dynPageName = "OrderView";
 
-    var configurationDynPageUrl = "https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + $rootScope.dynPageName;
+
 
 
 
