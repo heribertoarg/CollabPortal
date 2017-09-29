@@ -4,7 +4,7 @@ function app_searchcriteria($scope, $rootScope, app) {
     app.init($scope);
     
     $rootScope.dynPageName = "OrderView";
-    getDynPageConfiguration($rootScope.dynPageName);
+    $scope.getDynPageConfiguration($rootScope.dynPageName);
     
     $scope.datasources = {   
         DescriptionsDatasource : [ 
