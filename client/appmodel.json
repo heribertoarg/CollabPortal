@@ -142,19 +142,5 @@
         "type": "string"
       }
     }
-  },
-  "reportissue": {
-    "type": "object",
-    "properties": {
-      "createissue": {
-        "type": "action"
-      },
-      "summary": {
-        "type": "string"
-      },
-      "category": {
-        "type": "select"
-      }
-    }
   }
 }
