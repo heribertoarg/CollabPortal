@@ -20,24 +20,21 @@ function app_searchcriteria($scope, $rootScope, app) {
     $scope.getDynPageConfiguration = function (dynPageName){
         $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + dynPageName)
         .then(function successCallback(response) {
-            
             return response.data;
-            
         }, function errorCallback(response) {
-            // called asynchronously if an error occurs
-            // or server returns response with an error status.
+            return response;
         });
                 
     }
  
     $scope.search = function (){
         $http.post("http://localhost:61454/api/values",$scope.searchArray)
-            .then(function successCallback(response) {
-                $rootScope.searchResults = response.data;
-                app.go('app.searchresults'); 
-            }, function errorCallback(response) {
-                return response;
-            });
+        .then(function successCallback(response) {
+            $rootScope.searchResults = response.data;
+            app.go('app.searchresults'); 
+        }, function errorCallback(response) {
+            return response;
+        });
     }  
     
 }
