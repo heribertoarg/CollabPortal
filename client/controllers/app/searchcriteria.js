@@ -526,4 +526,15 @@ function app_searchcriteria($scope, $rootScope, app) {
     	}
     };
     
+    $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
+    
+    $scope.datasources = {   
+        DescriptionsDatasource : [ 
+            { "colval":"1","lngdsc":"Option 1" },
+            { "colval":"2","lngdsc":"Option 2" } ,
+            { "colval":"3","lngdsc":"Option 3" } ,
+            { "colval":"4","lngdsc":"Option 4" } 
+        ]
+    };
+    
 }
