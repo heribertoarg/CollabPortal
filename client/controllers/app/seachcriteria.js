@@ -3,13 +3,6 @@ function app_searchcriteria($scope, $rootScope, app, $http) {
     'use strict';
     app.init($scope);
 
-    $rootScope.dynPageName = "OrderView";
-
-
-
-
-
-
     $rootScope.dynPage = {
     	"OrderPortalCfg": {
     		"TITLE": "Order View",
