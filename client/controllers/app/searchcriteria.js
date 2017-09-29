@@ -1,5 +1,5 @@
 angular.module('app').controller('app_searchcriteria', app_searchcriteria);
-function app_searchcriteria($scope, $rootScope, app) {
+function app_searchcriteria($scope, $rootScope, $http, app) {
     'use strict';
     app.init($scope);
     
