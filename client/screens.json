@@ -4,12 +4,6 @@
   "startScreen": null,
   "screens": [
     {
-      "id": "blank",
-      "name": "BLANK",
-      "sourceAppId": "_blank",
-      "sourceScreenId": "app.blank"
-    },
-    {
       "id": "menu",
       "name": "menu",
       "sourceAppId": "_blank",
