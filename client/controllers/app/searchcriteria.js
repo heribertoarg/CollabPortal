@@ -7,6 +7,8 @@ function app_searchcriteria($scope, $rootScope, app) {
     
     var configurationDynPageUrl = "https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + $rootScope.dynPageName;
     
+    
+    
     $rootScope.dynPage = {
     	"OrderPortalCfg": {
     		"TITLE": "Order View",
@@ -543,8 +545,19 @@ function app_searchcriteria($scope, $rootScope, app) {
  
     $scope.searchArray = {};
  
+    $scope.getDynPageConfiguration = function (dynPageName){
+        $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + dynPageName)
+        .then(function successCallback(response) {
+            $rootScope.dynPage = response.data;
+        }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
+                
+    }
+    
+ 
     $scope.search = function (){
-        
         $http.post("http://localhost:61454/api/values",$scope.searchArray)
             .then(function successCallback(response) {
                 $rootScope.searchResults = response.data;
@@ -552,9 +565,6 @@ function app_searchcriteria($scope, $rootScope, app) {
             }, function errorCallback(response) {
                 return response;
             });
-
-    
-            
     }  
     
 }
