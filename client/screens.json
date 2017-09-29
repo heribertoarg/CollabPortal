@@ -16,12 +16,6 @@
       "sourceScreenId": "app.multiselect"
     },
     {
-      "id": "seachcriteria",
-      "name": "SeachCriteria",
-      "sourceScreenId": "app.blank",
-      "sourceAppId": "_blank"
-    },
-    {
       "id": "searchresults",
       "name": "SearchResults",
       "sourceScreenId": "app.blank",
