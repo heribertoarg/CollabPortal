@@ -1,0 +1,160 @@
+{
+  "login": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "username": {
+        "type": "string",
+        "label": "username",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "password": {
+        "type": "string",
+        "label": "password",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "errorMessage": {
+        "type": "string",
+        "label": "errorMessage",
+        "update": {
+          "type": "none"
+        }
+      },
+      "submit": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "IssuesList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "severity": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "summary": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      }
+    }
+  },
+  "viewissues": {
+    "type": "object",
+    "comment": "issueslist",
+    "properties": {
+      "issueslist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "summary": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "status": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "severity": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "assignedto": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "updated": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      }
+    }
+  },
+  "createreport": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "catergory": {
+        "type": "select"
+      },
+      "summary": {
+        "type": "string"
+      }
+    }
+  },
+  "reportissue": {
+    "type": "object",
+    "properties": {
+      "createissue": {
+        "type": "action"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "category": {
+        "type": "select"
+      }
+    }
+  }
+}

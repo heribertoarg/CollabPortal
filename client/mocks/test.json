@@ -1,0 +1,19 @@
+{
+  "IssuesList": [
+    {
+      "id": "1",
+      "severity": "high",
+      "summary": "urgent"
+    },
+    {
+      "id": "2",
+      "severity": "medium",
+      "summary": "needs replacements"
+    },
+    {
+      "id": "3",
+      "severity": "low",
+      "summary": "clean it"
+    }
+  ]
+}

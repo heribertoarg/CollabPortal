@@ -1,0 +1,55 @@
+{
+  "id": "app",
+  "name": "mantisheribertoarg",
+  "startScreen": "app.login",
+  "screens": [
+    {
+      "id": "blank",
+      "name": "BLANK",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.blank"
+    },
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.multiselect"
+    },
+    {
+      "id": "login",
+      "name": "login",
+      "sourceScreenId": "app.login.loginconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "login"
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "test"
+    },
+    {
+      "id": "viewissues",
+      "name": "viewissues",
+      "sourceScreenId": "app.tableviewadvanced.tableviewadvancedconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "viewissues"
+    },
+    {
+      "id": "createreport",
+      "name": "createreport",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "reportissue"
+    }
+  ],
+  "sourceAppId": "_blank",
+  "sourceScreenId": "app"
+}

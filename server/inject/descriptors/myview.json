@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "viewissueslink": {
+      "type": "action",
+      "selector": "a[href]",
+      "control": "action.link",
+      "selectContains": "View Issues"
+    },
+    "isMyViewScreen": {
+      "type": "identifier",
+      "control": "exists",
+      "selectContains": "Assigned to Me (Unresolved)",
+      "selector": ".subtle"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isMyViewScreen"
+      ],
+      "action": "viewissueslink"
+    }
+  ]
+}

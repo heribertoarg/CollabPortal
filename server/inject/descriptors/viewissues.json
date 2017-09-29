@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "comment": "issueslist",
+  "properties": {
+    "issueslist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            },
+            "selector": "td",
+            "selectIndex": 3,
+            "control": "property.innerText"
+          },
+          "summary": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            },
+            "selector": "td",
+            "selectIndex": 10,
+            "control": "property.innerText"
+          },
+          "status": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
+          },
+          "severity": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            },
+            "selector": "td",
+            "selectIndex": 7,
+            "control": "property.innerText"
+          },
+          "assignedto": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
+          },
+          "updated": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
+          }
+        }
+      },
+      "update": {
+        "type": "none"
+      },
+      "selectorAll": "#buglist tr[bgcolor]"
+    },
+    "isViewIssuesScreen": {
+      "type": "identifier",
+      "selector": ".form-title",
+      "control": "exists",
+      "selectContains": "Viewing Issues"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isViewIssuesScreen"
+      ],
+      "screens": [
+        "viewissues"
+      ]
+    }
+  ]
+}

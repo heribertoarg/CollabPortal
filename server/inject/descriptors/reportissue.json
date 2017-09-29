@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "isCreateScreen": {
+      "type": "identifier",
+      "selector": ".form-title",
+      "control": "exists",
+      "selectContains": "Enter Report Details"
+    },
+    "category": {
+      "type": "select",
+      "selector": "[name=\"category_id\"]",
+      "control": "select"
+    },
+    "summary": {
+      "type": "string",
+      "control": "text",
+      "selector": "[name=\"summary\"]"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isCreateScreen"
+      ],
+      "screens": [
+        "createreport"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "comment": "Login",
+  "properties": {
+    "username": {
+      "type": "string",
+      "label": "username",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      },
+      "selector": "[name=\"username\"]",
+      "control": "text"
+    },
+    "password": {
+      "type": "string",
+      "label": "password",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      },
+      "selector": "[name=\"password\"]",
+      "control": "text"
+    },
+    "errorMessage": {
+      "type": "string",
+      "label": "errorMessage",
+      "update": {
+        "type": "none"
+      },
+      "selector": "body > div:nth-child(3) > font",
+      "control": "property.innerText"
+    },
+    "submit": {
+      "type": "action",
+      "selector": ".button",
+      "control": "action.button"
+    },
+    "isLogin": {
+      "type": "identifier",
+      "selector": ".form-title",
+      "control": "exists",
+      "selectContains": "Login"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isLogin"
+      ],
+      "screens": [
+        "login"
+      ]
+    }
+  ]
+}
