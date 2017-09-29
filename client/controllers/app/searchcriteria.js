@@ -536,5 +536,21 @@ function app_searchcriteria($scope, $rootScope, app) {
             { "colval":"4","lngdsc":"Option 4" } 
         ]
     };
+ 
+    $scope.searchArray = {};
+ 
+    $scope.search = function (){
+        
+        $http.post("http://localhost:61454/api/values",$scope.searchArray)
+            .then(function successCallback(response) {
+                $rootScope.searchResults = response.data;
+                app.go('app.searchresults'); 
+            }, function errorCallback(response) {
+                return response;
+            });
+
+    
+            
+    }  
     
 }
