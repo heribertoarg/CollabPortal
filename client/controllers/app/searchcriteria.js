@@ -4,9 +4,14 @@ function app_searchcriteria($scope, $rootScope, app) {
     app.init($scope);
     
     $rootScope.dynPageName = "OrderView";
-    var a = getDynPageConfiguration();
-    $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
-    
+    $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
+        .then(function successCallback(response) {
+            $rootScope.dynPage = response.data;
+            $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
+        }, function errorCallback(response) {
+            return response;
+        });
+        
     $scope.datasources = {   
         DescriptionsDatasource : [ 
             { "colval":"1","lngdsc":"Option 1" },
@@ -17,15 +22,6 @@ function app_searchcriteria($scope, $rootScope, app) {
     };
     
 
-    $scope.getDynPageConfiguration = function (){
-        $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
-        .then(function successCallback(response) {
-            $rootScope.dynPage = response.data;
-        }, function errorCallback(response) {
-            return response;
-        });
-    }
- 
     $scope.search = function (){
         $http.post("http://localhost:61454/api/values",$scope.searchArray)
         .then(function successCallback(response) {
