@@ -3,6 +3,10 @@ function app_searchcriteria($scope, $rootScope, app) {
     'use strict';
     app.init($scope);
     
+    $rootScope.dynPageName = "OrderView";
+    
+    var configurationDynPageUrl = "https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/" + $rootScope.dynPageName;
+    
     $rootScope.dynPage = {
     	"OrderPortalCfg": {
     		"TITLE": "Order View",
