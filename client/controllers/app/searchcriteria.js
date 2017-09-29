@@ -4,7 +4,7 @@ function app_searchcriteria($scope, $rootScope, app) {
     app.init($scope);
     
     $rootScope.dynPageName = "OrderView";
-    $rootScope.dynPage = $scope.getDynPageConfiguration();
+    $scope.getDynPageConfiguration();
     $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
     
     $scope.datasources = {   
@@ -20,7 +20,7 @@ function app_searchcriteria($scope, $rootScope, app) {
     $scope.getDynPageConfiguration = function (){
         $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
         .then(function successCallback(response) {
-            return response.data;
+            $rootScope.dynPage = response.data;
         }, function errorCallback(response) {
             return response;
         });
