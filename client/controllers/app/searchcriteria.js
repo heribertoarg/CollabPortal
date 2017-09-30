@@ -7,7 +7,7 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     
     debugger;
     
-    $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
+    $http.get("https://localhost:44330/api/configuration/dynpages/OrderView")
         .then(function successCallback(response) {
             $rootScope.dynPage = response.data;
             $scope.controls = $rootScope.dynPage.OrderPortalCfg.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
