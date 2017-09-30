@@ -15,7 +15,7 @@ function app_landingpage($scope, $rootScope, $http, app) {
     
     $scope.search = function(){
         //$http.post("http://localhost:61454/api/values",$scope.searchArray)
-        $http.post("http://localhost:44330/api/configurationApi",$scope.searchArray)
+        $http.get("http://localhost:44330/api/configurationApi")
         .then(function successCallback(response) {
             $rootScope.searchResults = response.data;
             app.go('app.searchresults'); 
