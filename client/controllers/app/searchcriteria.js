@@ -543,14 +543,26 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     
     $scope.searchArray = {};
  
-    $scope.search = function (){
-        
+    $scope.test = getdynpage();
+ 
+    $scope.search = function(){
         $http.post("http://localhost:61454/api/values",$scope.searchArray)
-            .then(function successCallback(response) {
-                $rootScope.searchResults = response.data;
-                app.go('app.searchresults'); 
-            }, function errorCallback(response) {
-                return response;
-            });
-    }   
+        .then(function successCallback(response) {
+            $rootScope.searchResults = response.data;
+            app.go('app.searchresults'); 
+        }, function errorCallback(response) {
+            return response;
+        });
+    }
+    
+    $scope.getdynpage = function(){
+        $http.get("http://localhost:44330/api/ConfigurationApi")
+        .then(function successCallback(response) {
+            debugger;
+            $rootScope.dynPage = response.data;
+            //app.go('app.searchresults'); 
+        }, function errorCallback(response) {
+            return response;
+        });
+    }
 }
