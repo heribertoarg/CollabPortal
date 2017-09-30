@@ -7,7 +7,7 @@ function app_landingpage($scope, app) {
         $http.get("http://localhost:44330/api/configuration/dynpages/OrderView")
         .then(function successCallback(response) {
             $rootScope.dynPage = response.data;
-            //app.go('app.searchresults'); 
+            app.go('app.searchcriteria'); 
         }, function errorCallback(response) {
             return response;
         });
