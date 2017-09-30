@@ -2,6 +2,17 @@ angular.module('app').controller('app_searchcriteria', app_searchcriteria);
 function app_searchcriteria($scope, $rootScope, $http, app) {
     'use strict';
     app.init($scope);
+
+    $scope.getdynpage = function(){
+        $http.get("http://localhost:44330/api/ConfigurationApi")
+        .then(function successCallback(response) {
+            $rootScope.dynPage = response.data;
+            //app.go('app.searchresults'); 
+        }, function errorCallback(response) {
+            return response;
+        });
+    }
+
     
     $rootScope.dynPageName = "OrderView";
     
@@ -555,13 +566,5 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
         });
     }
     
-    $scope.getdynpage = function(){
-        $http.get("http://localhost:44330/api/ConfigurationApi")
-        .then(function successCallback(response) {
-            $rootScope.dynPage = response.data;
-            //app.go('app.searchresults'); 
-        }, function errorCallback(response) {
-            return response;
-        });
-    }
+
 }
