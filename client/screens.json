@@ -26,6 +26,12 @@
       "name": "SearchCriteria",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "landingpage",
+      "name": "LandingPage",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",
