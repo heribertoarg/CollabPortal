@@ -544,8 +544,6 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     
     $scope.searchArray = {};
  
-    $scope.getdynpage();
- 
     $scope.search = function(){
         $http.post("http://localhost:61454/api/values",$scope.searchArray)
         .then(function successCallback(response) {
