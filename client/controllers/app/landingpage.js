@@ -4,7 +4,7 @@ function app_landingpage($scope, $rootScope, $http, app) {
     app.init($scope);
     
     $scope.getdynpage = function(){
-        $http.get("http://localhost:44330/api/configuration/dynpages/OrderView")
+        $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
         .then(function successCallback(response) {
             $rootScope.dynPage = response.data;
             app.go('app.searchcriteria'); 
