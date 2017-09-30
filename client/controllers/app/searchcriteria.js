@@ -558,7 +558,6 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     $scope.getdynpage = function(){
         $http.get("http://localhost:44330/api/ConfigurationApi")
         .then(function successCallback(response) {
-            debugger;
             $rootScope.dynPage = response.data;
             //app.go('app.searchresults'); 
         }, function errorCallback(response) {
