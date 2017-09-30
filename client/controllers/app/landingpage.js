@@ -7,6 +7,7 @@ function app_landingpage($scope, $rootScope, $http, app) {
         $http.get("https://hkdnte214.asia.ad.flextronics.com:2872/api/configuration/dynpages/OrderView")
         .then(function successCallback(response) {
             $rootScope.dynPage = response.data;
+            debugger;
             app.go('app.searchcriteria'); 
         }, function errorCallback(response) {
             return response;
