@@ -7,7 +7,7 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     
     debugger;
     
-    $scope.controls = $scope.dynPage.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
+    $scope.controls = $scope.dynPage.HEAD.OrderPortalControlsCollection.OrderPortalControl;
     
     $scope.datasources = {   
         DescriptionsDatasource : [ 
