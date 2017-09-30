@@ -3,7 +3,7 @@ function app_searchcriteria($scope, $rootScope, $http, app) {
     'use strict';
     app.init($scope);
 
-    $scope.controls = $rootScope.dynPage.HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
+    $scope.controls = .HEAD.OrderPortalControlsCollection.OrderPortalControls.OrderPortalControl;
     
     $scope.datasources = {   
         DescriptionsDatasource : [ 
