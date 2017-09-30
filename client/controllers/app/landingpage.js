@@ -12,15 +12,4 @@ function app_landingpage($scope, $rootScope, $http, app) {
             return response;
         });
     }
-    
-    $scope.search = function(){
-        //$http.post("http://localhost:61454/api/values",$scope.searchArray)
-        $http.get("https://localhost:44330/api/configurationApi")
-        .then(function successCallback(response) {
-            $rootScope.searchResults = response.data;
-            app.go('app.searchresults'); 
-        }, function errorCallback(response) {
-            return response;
-        });
-    }
 }
