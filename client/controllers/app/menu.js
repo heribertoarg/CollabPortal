@@ -9,7 +9,7 @@ function app_menu($scope, app) {
           "sideMenuItems": [
             {
               "itemName": "Order View",
-              "action" : "SearchCriteria(OrderView)"
+              "dynPageName" : "OrderView"
             },
             {
               "itemName": "Group 1 - Menu Option 2"
