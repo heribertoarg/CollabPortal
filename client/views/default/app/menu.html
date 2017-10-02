@@ -13,9 +13,9 @@
             <div class="item item-icon-right item-divider calm-bg" data-comp-id="item.1">
                 <div data-comp-id="text.1" ng-bind="item.groupName">Menu Group</div>
             </div>
-            <div "&quot;)"="" +="" class="item item-icon-right" data-comp-id="item.2"
-                menus.sidemenugroups[item].sidemenuitems[menuitem].action=""
-                ng-click="getdynpage(&quot;OrderView&quot;)">
+            <div class="item item-icon-right" data-comp-id="item.2"
+                ng-click="getdynpage(&quot;OrderView&quot;)"
+                ng-repeat="menuItem in item.sideMenuItems">
                 <div data-comp-id="text.2" ng-bind="menuItem.itemName">
                     Some text
                 </div>
