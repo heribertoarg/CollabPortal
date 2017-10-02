@@ -32,13 +32,6 @@
       "name": "LandingPage",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
-    },
-    {
-      "id": "sidemenuclassic",
-      "name": "SideMenu-Classic",
-      "sourceScreenId": "app.slideoutmenu.sidemenuclassic",
-      "sourceAppId": "universaltemplates",
-      "model": "sidemenuclassic"
     }
   ],
   "sourceAppId": "_blank",

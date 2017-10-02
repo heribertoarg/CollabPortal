@@ -51,14 +51,5 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.sidemenuclassic', {
-        views: {
-            app: {
-                controller: 'app_sidemenuclassic',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.sidemenuclassic');
-                }
-            }
-        }
     });
 });
