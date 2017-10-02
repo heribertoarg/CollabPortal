@@ -5,7 +5,7 @@ function app_menu($scope, app) {
     
     $scope.menus = { "sideMenuGroups": [
         {
-          "groupName": "Menu Group - 1",
+          "groupName": "Dynamic Pages",
           "sideMenuItems": [
             {
               "itemName": "Order View",
