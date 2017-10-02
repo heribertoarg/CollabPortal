@@ -32,6 +32,13 @@
       "name": "LandingPage",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "listviewclassic",
+      "name": "ListView-Classic",
+      "sourceScreenId": "app.listview.listviewclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "listviewclassic"
     }
   ],
   "sourceAppId": "_blank",
