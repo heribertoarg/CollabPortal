@@ -16,7 +16,7 @@
             <div class="item item-icon-right" data-comp-id="item.2"
                 ng-repeat="menuItem in item.sideMenuItems">
                 <div data-comp-id="text.2" ng-bind="menuItem.itemName"
-                    ng-click="getdynpage('OrderView')">
+                    ng-click="getdynpage('{{menuItem.dynPageName}}')">
                     Some text
                 </div>
             </div>
