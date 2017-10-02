@@ -11,10 +11,10 @@
     <ion-content data-comp-id="ionic-content.1">
         <ion-list data-comp-id="ionic-list.1" ng-repeat="item in menus.sideMenuGroups">
             <div class="item item-icon-right item-divider calm-bg" data-comp-id="item.1">
-                <div data-comp-id="text.1" ng-bind="item.groupName">Menu Group - 2</div>
+                <div data-comp-id="text.1" ng-bind="item.groupName">Menu Group</div>
             </div>
             <div class="item item-icon-right" data-comp-id="item.2"
-                ng-click="app.action('sidemenu', 'data.sideMenuGroups[item].sideMenuItems[menuItem].action', this)"
+                ng-click="app.action('sidemenu', 'menus.sideMenuGroups[item].sideMenuItems[menuItem].action', this)"
                 ng-repeat="menuItem in item.sideMenuItems">
                 <div data-comp-id="text.2" ng-bind="menuItem.itemName">
                     Some text

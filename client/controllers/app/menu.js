@@ -8,7 +8,8 @@ function app_menu($scope, app) {
           "groupName": "Menu Group - 1",
           "sideMenuItems": [
             {
-              "itemName": "Group 1 - Menu Option 1"
+              "itemName": "Order View",
+              "action" : "SearchCriteria(OrderView)"
             },
             {
               "itemName": "Group 1 - Menu Option 2"
