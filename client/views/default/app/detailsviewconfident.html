@@ -1,0 +1,74 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1"
+        style="border-bottom: 1px solid rgba(255, 255, 255, 0);">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
+                ng-click="app.go('app.searchresultproductlist')"
+                style="color: rgb(255, 255, 255);"></button>
+            <button class="button button-icon ion-navicon" data-comp-id="button.2"
+                ng-click="app.go('app.menu')" style="color: rgb(255, 255, 255);"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Details View</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-ios-cart" data-comp-id="button.3"
+                style="margin: 0px -10px 0px 0px; color: rgb(255, 255, 255);"></button>
+            <span class="badge" data-comp-id="text.1"
+                style="color: rgb(255, 255, 255); font-weight: 300; font-size: 12px; margin: 0px 0px 0px -5px;">0</span>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <div class="row" data-comp-id="row.1">
+            <div class="col text-center" data-comp-id="column.1" style="padding: 20px 5px;"><img data-comp-id="image.1" data-img="" ng-src="images/detailsviewconfident/Placeholder-Img.png"
+                style="width: 150px;">
+                <div class="row" data-comp-id="row.2" style="padding: 15px 15px 0px;">
+                    <div class="col" data-comp-id="column.2">
+                        <div data-comp-id="text.2" ng-bind="data.title"
+                            style="color: rgb(102, 102, 102); font-size: 18px;">Title goes here</div>
+                        <div data-comp-id="text.3" ng-bind="data.descriptionShort"
+                            style="font-size: 16px; color: rgb(102, 102, 102); font-weight: 300; margin: 4% 0% 0%;">Description goes here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" light-bg btmshadow" data-comp-id="div.1" style="margin: 0% 4%;">
+            <div class="row stable-bg" data-comp-id="row.3" style="margin: 0px;">
+                <div class="col text-right col-33" data-comp-id="column.3"
+                    style="padding: 25px 10px 0px 0px;">
+                    <div data-comp-id="text.4"
+                        style="float: left; margin: 0px 0px 0px 15px; color: rgb(102, 102, 102); font-size: 12px;">Qty:</div>
+                    <div data-comp-id="text.5" ng-bind="data.quantity"
+                        style="float: left; margin: 0px 0px 0px 5px; color: rgb(102, 102, 102); font-weight: bold;">1</div>
+                </div>
+                <div class="col col-25" data-comp-id="column.4" style="padding: 20px 0px;">
+                    <button class="button ion-ios-plus-empty button-small" data-comp-id="button.4"
+                        ng-click="incrementQuant()" style="font-size:24px"></button>
+                    <button class="button ion-ios-minus-empty button-small" data-comp-id="button.5"
+                        ng-click="decrementQuant()" style="font-size:24px"></button>
+                </div>
+                <div class="col text-center" data-comp-id="column.5" style="padding: 5px;">
+                    <button class="button button-round button-energized" data-comp-id="button.6"
+                        ng-click="app.action('detailsview', 'action', this)"
+                        style="border-color: rgba(255, 255, 255, 0);">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class=" light-bg" data-comp-id="div.2"
+            style="margin: 4%; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221);">
+            <div class="row" data-comp-id="row.4">
+                <div class="col" data-comp-id="column.6"
+                    style="border-bottom: 1px solid rgb(238, 238, 238); padding: 15px 15px 15px 10px;">
+                    <div data-comp-id="text.6" ng-bind="data.title"
+                        style="font-size: 18px; color: rgb(51, 51, 51); font-weight: bold;">Title-1</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.5" style="margin: 5px 0px 0px;">
+                <div class="col" data-comp-id="column.7" style="padding: 5px 5px 5px 10px;">
+                    <div data-comp-id="text.7" ng-bind="data.description"
+                        style="color: rgb(102, 102, 102); font-size: 16px;">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut enim ac sem
+                        mollis pharetra quis id arcu. Donec facilisis diam quis eleifend rutrum.</div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

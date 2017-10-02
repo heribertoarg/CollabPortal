@@ -32,6 +32,13 @@
       "name": "LandingPage",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "detailsviewconfident",
+      "name": "DetailsView-Confident",
+      "sourceScreenId": "app.detailsview.detailsviewconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "detailsviewconfident"
     }
   ],
   "sourceAppId": "_blank",
