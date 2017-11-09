@@ -68,35 +68,5 @@
         }
       }
     }
-  },
-  "tabledataconfident": {
-    "type": "object",
-    "comment": "TableView",
-    "properties": {
-      "listItems": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "description": {
-              "type": "string",
-              "label": "description"
-            },
-            "name": {
-              "type": "string",
-              "label": "ListItemName"
-            },
-            "date": {
-              "type": "string",
-              "label": "Date - Time"
-            },
-            "action": {
-              "type": "action"
-            }
-          }
-        },
-        "label": "ListItems"
-      }
-    }
   }
 }
