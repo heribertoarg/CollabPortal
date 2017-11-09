@@ -69,5 +69,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.detailsviewconfident', {
+        views: {
+            app: {
+                controller: 'app_detailsviewconfident',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.detailsviewconfident');
+                }
+            }
+        }
     });
 });
