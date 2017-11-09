@@ -46,13 +46,6 @@
       "sourceScreenId": "app.listview.listviewconfident",
       "sourceAppId": "universaltemplates",
       "model": "listviewconfident"
-    },
-    {
-      "id": "detailsviewconfident",
-      "name": "DetailsView-Confident",
-      "sourceScreenId": "app.detailsview.detailsviewconfident",
-      "sourceAppId": "universaltemplates",
-      "model": "detailsviewconfident"
     }
   ],
   "sourceAppId": "_blank",
