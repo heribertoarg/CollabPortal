@@ -46,13 +46,6 @@
       "sourceScreenId": "app.listview.listviewconfident",
       "sourceAppId": "universaltemplates",
       "model": "listviewconfident"
-    },
-    {
-      "id": "tabledataconfident",
-      "name": "TableData-Confident",
-      "sourceScreenId": "app.tableview.tabledataconfident",
-      "sourceAppId": "universaltemplates",
-      "model": "tabledataconfident"
     }
   ],
   "sourceAppId": "_blank",
