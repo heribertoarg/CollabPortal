@@ -1,0 +1,167 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Form Title</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.2"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class=" positive-bg" data-comp-id="ionic-content.1">
+        <!--Form Section-->
+        <!--Container 1-->
+        <div class="light-bg card" data-comp-id="div.1" style="margin: 4%;">
+            <!--User Input-->
+            <div class="row calm-bg" data-comp-id="row.1" style="margin: -2px 0px 0px;">
+                <div class="col" data-comp-id="column.1">
+                    <div data-comp-id="text.1"
+                        style="font-size: 16px; font-weight: normal; margin: 0% 0% 0% 2%;">Section One</div>
+                </div>
+            </div>
+            <label class="item item-input" data-comp-id="textInput.1">
+                <span class="input-label">Input Label</span>
+                <input ng-model="data.string" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.2">
+                <span class="input-label">Input Label</span>
+                <input ng-model="data.string2" type="text">
+            </label>
+            <label class="item" data-comp-id="takePhoto.1"
+                ng-class="{'item-input item-button-right': style === 'control'}"
+                take-photo="control">
+                <span class="input-label" ng-if="style === 'control'">Add Attachment</span>
+                <button class="button button-icon" ng-if="style === 'control'">
+                    <i class="icon positive-icon ion-camera"></i>
+                </button>
+                <input disabled="" ng-if="style === 'control'" type="text">
+                <button class="button button-block button-positive nomargin"
+                    ng-if="style === 'button'">Take Photo</button>
+                <textarea class="not-visible"></textarea>
+            </label>
+            <!--User Input-->
+            <!--User Input-->
+            <!--User Input-->
+        </div>
+        <!--Container 1-->
+        <!--Form Section-->
+        <include-page data-comp-id="includePage.1" name="" page-data="{}"></include-page>
+        <!--Form Section-->
+        <!--Container 2-->
+        <!--Form Section-->
+        <!--Form Section-->
+        <!--Container 3-->
+        <div class=" card" data-comp-id="div.2" style="margin: 0% 4%; padding: 0px;">
+            <div class="row calm-bg" data-comp-id="row.2"
+                style="margin: 0px 0px 2px; border-bottom: 1px solid rgb(221, 221, 221); border-left: 0px;">
+                <div class="col" data-comp-id="column.2">
+                    <div data-comp-id="text.2" style="font-size: 16px; margin: 0% 0% 0% 2%;">Section Two</div>
+                </div>
+            </div>
+            <multiselect-list data-comp-id="multiselectList.1"
+                ng-model="data.multiSelectData" select-class=" positive-icon">Input Label</multiselect-list>
+            <div class="row" data-comp-id="row.3"
+                style="border-top: 2px solid rgb(221, 221, 221); border-bottom: 1px solid rgb(221, 221, 221); padding: 0px;">
+                <div class="col" data-comp-id="column.3" style="padding: 0px;"></div>
+            </div>
+            <multiselect-list data-comp-id="multiselectList.2"
+                ng-model="data.multiSelectData2" select-class=" positive-icon">Input Label</multiselect-list>
+        </div>
+        <!--Container 3-->
+        <!--Form Section-->
+        <!--Form Section-->
+        <!--Container 4-->
+        <div class=" card" data-comp-id="div.3" style="margin: 4%;">
+            <div class="row calm-bg" data-comp-id="row.4" style="margin: -2px 0px 0px;">
+                <div class="col" data-comp-id="column.4">
+                    <div data-comp-id="text.3" style="font-size: 16px; margin: 0% 0% 0% 2%;">Section Three</div>
+                </div>
+            </div>
+            <ion-checkbox
+                class="checkbox-style-square checkbox-position-right positive-icon-border"
+                data-comp-id="checkbox.1" ng-model="data.boolean">Checkbox</ion-checkbox>
+        </div>
+        <!--Container 4-->
+        <!--Container 5-->
+        <!--Form Section-->
+        <!--Form Section-->
+        <div class=" card" data-comp-id="div.4" style="margin: 4%;">
+            <div class="row calm-bg" data-comp-id="row.5" style="margin: -2px 0px 0px;">
+                <div class="col" data-comp-id="column.5">
+                    <div class="" data-comp-id="text.4"
+                        style="font-size: 16px; margin: 0% 0% 0% 2%;">Section Four</div>
+                </div>
+            </div>
+            <ion-radio class="radio-button positive-icon" data-comp-id="radio.1"
+                ng-model="data.Radio.selected" ng-repeat="item in data.Radio.options"
+                ng-value="item">{{item.label}}</ion-radio>
+        </div>
+        <!--Container 5-->
+        <!--Container 6-->
+        <div class=" card" data-comp-id="div.5" style="margin: 4%;">
+            <label class="item item-input item-date-icon positive-icon"
+                data-comp-id="dateInput.1">
+                <span class="input-label">Date</span>
+                <input date-format="undefined" max="2100-12-12" min="1900-01-01"
+                    ng-model-options="{allowInvalid: true}" ng-model="data.date" type="date">
+            </label>
+            <label class="item item-input item-time-icon positive-icon"
+                data-comp-id="timeInput.1">
+                <span class="input-label">Time</span>
+                <input ng-model="data.time" time-format="undefined" type="time">
+            </label>
+        </div>
+        <!--Container 6-->
+        <!--Container 7-->
+        <div class=" card" data-comp-id="div.6" style="margin: 4%;">
+            <ion-toggle class="toggle-item" data-comp-id="toggle.1" ng-model="data.boolean2">Toggle</ion-toggle>
+        </div>
+        <!--Container 7-->
+        <!--Form Section-->
+        <!--Form Section-->
+        <div class="light-bg card" data-comp-id="div.7"
+            style="margin: 4%; padding: 0px;">
+            <div class="row calm-bg" data-comp-id="row.6" style="margin: 0px;">
+                <div class="col" data-comp-id="column.6">
+                    <div data-comp-id="text.5" style="font-size: 16px; margin: 0% 0% 0% 2%;">Comments</div>
+                </div>
+            </div>
+            <label class="item item-input item-stacked-label light-bg"
+                data-comp-id="textAreaInput.1"
+                style="border-bottom: 0px; margin: 2% 0% 0%; border-top: 0px;">
+                <textarea ng-model="data.string3" placeholder="Write your comments here"
+                    rows="4"></textarea>
+            </label>
+        </div>
+        <div class="row" data-comp-id="row.8">
+            <div class="col" data-comp-id="column.10">
+                <button class="button button-block button-calm dark" data-comp-id="button.3"
+                    ng-click="app.action('form', 'submit', this)">Submit</button>
+            </div>
+        </div>
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer="">
+        <div class="row" data-comp-id="row.7" style="padding: 0px; margin: 0px;">
+            <div class="col text-center" data-comp-id="column.7" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.1">
+                    <button
+                        class="button icon button-round button-shadowed ion-arrow-left-c button-calm"
+                        style="border-color: rgba(255, 255, 255, 0);"></button>
+                    <div class="label"></div>
+                </div>
+                <div class=" energized" data-comp-id="text.6">Cancel</div>
+            </div>
+            <div class="col text-center" data-comp-id="column.8" style="padding: 0px;"></div>
+            <div class="col text-center" data-comp-id="column.9" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.2">
+                    <button
+                        class="button icon ion-arrow-right-c button-round button-shadowed button-energized"
+                        style="border-color: rgba(255, 255, 255, 0);"></button>
+                    <div class="label"></div>
+                </div>
+                <div class=" energized" data-comp-id="text.7">Continue</div>
+            </div>
+        </div>
+    </div>
+</ion-view>

@@ -78,5 +78,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.formlargeconfident', {
+        views: {
+            app: {
+                controller: 'app_formlargeconfident',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.formlargeconfident');
+                }
+            }
+        }
     });
 });
