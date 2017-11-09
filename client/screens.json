@@ -46,6 +46,13 @@
       "sourceScreenId": "app.listview.listviewconfident",
       "sourceAppId": "universaltemplates",
       "model": "listviewconfident"
+    },
+    {
+      "id": "notificationsconfident",
+      "name": "Notifications-Confident",
+      "sourceScreenId": "app.notifications.notificationsconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "notificationsconfident"
     }
   ],
   "sourceAppId": "_blank",

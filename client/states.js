@@ -69,5 +69,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.notificationsconfident', {
+        views: {
+            app: {
+                controller: 'app_notificationsconfident',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.notificationsconfident');
+                }
+            }
+        }
     });
 });
