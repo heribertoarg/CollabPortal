@@ -39,6 +39,13 @@
       "sourceScreenId": "app.listview.listviewclassic",
       "sourceAppId": "universaltemplates",
       "model": "listviewclassic"
+    },
+    {
+      "id": "listviewconfident",
+      "name": "ListView-Confident",
+      "sourceScreenId": "app.listview.listviewconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "listviewconfident"
     }
   ],
   "sourceAppId": "_blank",
