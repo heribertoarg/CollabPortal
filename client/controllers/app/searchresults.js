@@ -11,3 +11,4 @@ function app_searchresults($scope, $rootScope, app) {
         { "name":"stcust", "caption":"Ship-To Customer", "position":"30", "width":"170", "mobileField":"Body" } ]
         
 }
+
