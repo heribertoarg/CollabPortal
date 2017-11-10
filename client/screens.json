@@ -60,6 +60,13 @@
       "sourceScreenId": "app.formlarge.formlargeconfident",
       "sourceAppId": "universaltemplates",
       "model": "formlargeconfident"
+    },
+    {
+      "id": "listviewconfident1",
+      "name": "ListView-Confident1",
+      "sourceScreenId": "app.listview.listviewconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "listviewconfident1"
     }
   ],
   "sourceAppId": "_blank",

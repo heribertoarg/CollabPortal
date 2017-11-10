@@ -87,5 +87,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.listviewconfident1', {
+        views: {
+            app: {
+                controller: 'app_listviewconfident1',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.listviewconfident1');
+                }
+            }
+        }
     });
 });
